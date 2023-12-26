@@ -52,7 +52,7 @@ const Header = () => {
               onMouseEnter={(e) => sliderMouseOver(e)}
               onMouseLeave={(e) => sliderMouseLeave(e)}
             >
-              Bog'lanish
+              Boglanish
             </li>
           </ul>
           <GrLanguage size={27} />
