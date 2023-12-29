@@ -39,7 +39,7 @@ const Intro = () => {
             >
               <Image src={"/images/3.jpg"} fill={true} alt="Image" />
           </div>
-              <h1 data-scroll data-scroll-speed="0.7">Abdulaziz Programmer</h1>
+              <h1><span data-scroll data-scroll-speed="0.7">Abdulaziz</span> <span data-scroll data-scroll-speed="0.5">Programmer</span></h1>
         </div>
     </section>
   );
