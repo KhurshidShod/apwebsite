@@ -5,7 +5,7 @@ export default function Homee() {
       <br />
       <br />
       <br />
-      <h1>Savlatbek`s code</h1>
+      <h1>Savlatbek`s code updated!</h1>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto odit
         nemo aspernatur excepturi repellendus, doloremque, aliquam reiciendis
