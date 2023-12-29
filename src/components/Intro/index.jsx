@@ -28,7 +28,7 @@ const Intro = () => {
   return (
     <section className={styles.intro}>
           <div ref={backgroundImageRef} className={styles.intro__firstImage}>
-            <Image src={"/images/2.jpeg"} fill={true} alt="Image" />
+            <Image src={"/images/2.jpg"} fill={true} alt="Image" />
           </div>
           <div className={styles.intro__introContainer}>
             <div
@@ -37,8 +37,9 @@ const Intro = () => {
               data-scroll-speed="0.3"
               className={styles.intro__introContainer_introImage}
             >
-              <Image src={"/images/3.webp"} fill={true} alt="Image" />
+              <Image src={"/images/3.jpg"} fill={true} alt="Image" />
           </div>
+              <h1 data-scroll data-scroll-speed="0.7">Abdulaziz Programmer</h1>
         </div>
     </section>
   );
