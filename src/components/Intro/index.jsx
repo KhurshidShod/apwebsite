@@ -28,7 +28,7 @@ const Intro = () => {
   return (
     <section className={styles.intro}>
           <div ref={backgroundImageRef} className={styles.intro__firstImage}>
-            <Image src={"/images/2.jpg"} fill={true} alt="Image" />
+            <Image src={"/images/3.jpeg"} fill={true} alt="Image" />
           </div>
           <div className={styles.intro__introContainer}>
             <div

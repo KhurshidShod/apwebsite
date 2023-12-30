@@ -5,12 +5,12 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 const Description = () => {
   const phrases = [
-    "Lorem, ipsum dolor sit amet",
-    "Beatae, pariatur. Recusandae.",
-    "Magni sint odit, quasi non ",
-    "exercitationem accusamus .",
-    "Lorem, ipsum dolor sit amet",
-    "Beatae, pariatur. Recusandae.",
+    "Lorem, ipsum dolor sit amet ipsum dolor sit amet",
+    "Beatae, pariatur. Recusandae pariatur. Recusandae.",
+    "Magni sint odit, quasi non odit, quasi non",
+    "exercitationem accusamus exercitationem accusamus.",
+    "Lorem, ipsum dolor sit amet ipsum dolor sit amet",
+    "Beatae, pariatur. Recusandae pariatur. Recusandae.",
   ];
   return (
     <section className={styles.description}>
