@@ -4,7 +4,7 @@ import { useEffect } from "react";
 import styles from "./page.module.scss";
 import Hero from "@/components/Hero";
 
-export default function Home() {
+export default function Main() {
   useEffect(() => {
     (async () => {
       const LocomotiveScroll = (await import("locomotive-scroll")).default;
