@@ -5,7 +5,7 @@ import styles from "./page.module.scss";
 import Hero from "@/components/Hero";
 import ContactPage from "@/components/Contact";
 
-export default function Home() {
+export default function Main() {
   useEffect(() => {
     (async () => {
       const LocomotiveScroll = (await import("locomotive-scroll")).default;
