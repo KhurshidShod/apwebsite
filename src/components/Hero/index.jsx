@@ -10,6 +10,7 @@ const Hero = () => {
   const heroSvg5 = useRef(null);
   const heroSvg6 = useRef(null);
   const heroSvg7 = useRef(null);
+  const heroImage = useRef(null);
   const path = useRef(null);
   let progress = 0;
   let x = 0.5;
@@ -23,6 +24,7 @@ const Hero = () => {
     const speed5 = heroSvg5.current.getAttribute("data-speed");
     const speed6 = heroSvg6.current.getAttribute("data-speed");
     const speed7 = heroSvg7.current.getAttribute("data-speed");
+    const speed8 = heroImage.current.getAttribute("data-speed");
     const x1 = (window.innerWidth - e.clientX * speed1) / 150;
     const y1 = (window.innerHeight - e.clientY * speed1) / 150;
     const x2 = (window.innerWidth - e.clientX * speed2) / 150;
@@ -37,6 +39,8 @@ const Hero = () => {
     const y6 = (window.innerHeight - e.clientY * speed6) / 150;
     const x7 = (window.innerWidth - e.clientX * speed7) / 150;
     const y7 = (window.innerHeight - e.clientY * speed7) / 150;
+    const x8 = (window.innerWidth - e.clientX * speed7) / 150;
+    const y8 = (window.innerHeight - e.clientY * speed7) / 150;
     heroSvg1.current.style.transform = `translateX(${x1}px) translateY(${y1}px)`;
     heroSvg2.current.style.transform = `translateX(${x2}px) translateY(${y2}px)`;
     heroSvg3.current.style.transform = `translateX(${x3}px) translateY(${y3}px)`;
@@ -44,6 +48,7 @@ const Hero = () => {
     heroSvg5.current.style.transform = `translateX(${x5}px) translateY(${y5}px)`;
     heroSvg6.current.style.transform = `translateX(${x6}px) translateY(${y6}px)`;
     heroSvg7.current.style.transform = `translateX(${x7}px) translateY(${y7}px)`;
+    heroImage.current.style.transform = `translateX(${x8}px) translateY(${y8}px)`;
   }
   useEffect(() => {
     setPath(progress);
@@ -349,6 +354,8 @@ const Hero = () => {
             className={styles.hero__wrapper_image}
             data-scroll
             data-scroll-speed="0.7"
+            ref={heroImage}
+            data-speed={5}
           >
             <Image
               src="/images/hero2.png"
