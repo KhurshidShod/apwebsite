@@ -3,6 +3,7 @@
 import { useEffect } from "react";
 import styles from "./page.module.scss";
 import Hero from "@/components/Hero";
+import ContactPage from "@/components/Contact";
 
 export default function Home() {
   useEffect(() => {
@@ -15,6 +16,7 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <Hero />
+      <ContactPage />
     </main>
   );
 }
