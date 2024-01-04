@@ -1,5 +1,5 @@
 "use client";
-import { useRef, useState } from "react";
+import { useRef, useState, useEffect } from "react";
 import { GrLanguage } from "react-icons/gr";
 import { HiOutlineMenuAlt2 } from "react-icons/hi";
 import Image from "next/image";
@@ -11,6 +11,7 @@ import styles from "./style.module.scss";
 const Header = () => {
   const sliderRef = useRef(null);
   const [langsOpen, setLangsOpen] = useState(false);
+  const [shrinked, setShrinked] = useState(false);
   const sliderMouseOver = (e) => {
     const left = e.currentTarget.offsetLeft;
     const width = e.currentTarget.getBoundingClientRect().width;
@@ -23,8 +24,17 @@ const Header = () => {
     sliderRef.current.style.height = `2px`;
     sliderRef.current.style.borderRadius = `15px`;
   };
+  useEffect(() => {
+    window.addEventListener("scroll", (e) => {
+      if(window.pageYOffset >= 100){
+        setShrinked(true)
+      } else {
+        setShrinked(false)
+      }
+    })
+  }, [])
   return (
-    <header className={styles.header}>
+    <header className={`${styles.header} ${shrinked ? styles.shrinked : ''}`}>
       <div className="container">
         <nav className={styles.nav__wrapper}>
         <Magnetic>
