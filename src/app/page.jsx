@@ -2,8 +2,7 @@
 
 import { useEffect } from "react";
 import styles from "./page.module.scss";
-import Intro from '../components/Intro';
-import Description from "@/components/Description";
+import Hero from "@/components/Hero";
 
 export default function Home() {
   useEffect(() => {
@@ -15,8 +14,7 @@ export default function Home() {
   }, []);
   return (
     <main className={styles.main}>
-      <Intro />
-      <Description />
+      <Hero />
     </main>
   );
 }

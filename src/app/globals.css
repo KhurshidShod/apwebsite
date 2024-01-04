@@ -15,12 +15,9 @@
   margin: 0 auto;
 }
 :root{
-  --bg-black900: #141415;
-  --bg-black700: #1E1E20;
-  --bg-black500: #e6e6fe;
-  --bg-black400: #2E2E30;
-  --font-grey: #949495;
-  --font-white: #fff;
+  --color-main: white;
+  --color-secondary: #5dc700e0;
+  --font-main: #000;
   --color-green: #DFFF00;
   --card-box-shadow: 0 5px 6px #0f0f0f59,0 24px 82px #252525b3;
 }
