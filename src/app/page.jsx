@@ -17,6 +17,9 @@ export default function Main() {
     <main className={styles.main}>
       <Hero />
       <ContactPage />
+      <br />
+      <br />
+      <br />
     </main>
   );
 }
