@@ -17,9 +17,7 @@ header.header{
                     stroke: var(--font-secondar); 
                 }
             }
-            .indicator{
-            background-color: var(--font-main);
-            }
+
             ul{
                 li{
                     color: var(--font-main);
@@ -53,7 +51,7 @@ header.header{
         .indicator{
             width: 85px;
             height: 2px;
-            background-color: var(--font-main);
+            background-color: var(--color-secondary);
             position: absolute;
             left: 49.5%;
             bottom: 10%;
