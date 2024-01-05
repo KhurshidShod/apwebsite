@@ -1,11 +1,33 @@
 header.header{
-    position: fixed;
+    position: absolute;
     top: 0;
     width: 100%;
-    background-color: var(--color-main);
+    background-color: transparent;
     padding: 0 2rem;
     font-family: "Nunito" !important;
     z-index: 999;
+    &.shrinked{
+        position: fixed;
+        transition: .2s linear;
+        background-color: transparent;
+        backdrop-filter: blur(10px);
+        .nav__wrapper{
+            svg{
+                path{
+                    stroke: var(--font-secondar); 
+                }
+            }
+
+            ul{
+                li{
+                    color: var(--font-main);
+                    &:hover{
+                        color: var(--font-main);
+                    }
+                }
+            }
+        }
+    }
     .nav__wrapper{
         position: relative;
         width: 100%;
@@ -29,7 +51,7 @@ header.header{
         .indicator{
             width: 85px;
             height: 2px;
-            background-color: var(--font-main);
+            background-color: var(--color-secondary);
             position: absolute;
             left: 49.5%;
             bottom: 10%;
